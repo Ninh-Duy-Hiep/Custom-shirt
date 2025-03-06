@@ -1,0 +1,43 @@
+.main-container {
+    display: flex;
+    margin: 30px 175px;
+}
+/* main1-container */
+.main1-container {
+    flex-basis: 80%;
+    margin-right: 25px;
+}
+.main1-container p {
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #676c77;
+}
+/* main1-container-product */
+.main1-container-product {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* main1-product */
+.main1-product  {
+    width: 270px;
+    margin: 15px;
+    cursor: pointer;
+    position: relative;
+}
+.main1-product p {
+    font-size: 15px;
+    text-align: center;
+}
+.main1-product img {
+    width: 100%;
+}
+
+/* main2-container */
+.main2-container {
+    flex-basis: 20%;
+}
+.main2-container img {
+    width: 100%;
+}
+

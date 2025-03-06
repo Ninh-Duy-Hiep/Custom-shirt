@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/product3d.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="middle-header">
+            <div class="logo-header">
+                <a href="#" onclick="goTohomepage()"><img src="IMAGES/logo_page.png" alt="" /></a>
+            </div>
+            <div class="menu-header">
+                <div class="menu1">
+                    <a href="#">ÁO ĐỒNG PHỤC</a>
+                    <div class="drop-down1">
+                        <a href="#" onclick="goTomayaodongphuc()">
+                            <p>May Áo Thun Đồng Phục</p>
+                            <img src="IMAGES/may-ao-thun-dong-phuc.jpg" alt="" />
+                        </a>
+                        <a href="#" onclick="goTodongphuc3d()">
+                            <p>Đồng Phục 3D</p>
+                            <img src="IMAGES/BANNER-3D.jpg" alt="" />
+                        </a>
+                        <a href="#" onclick="goTocachchonvai()">
+                            <p>Cách Chọn Vải</p>
+                            <img src="IMAGES/cach-chon-vai.jpg" alt="" />
+                        </a>
+                        <a href="#" onclick="goTobangmau()">
+                            <p>Bảng Màu - Size</p>
+                            <img src="IMAGES/bang-size.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="menu2">
+                    <a href="#" onclick="goTodichvu()">DỊCH VỤ</a>
+                  </div>
+                  <div class="menu3">
+                    <a href="#" onclick="goTo_design_online()">THIẾT KẾ ONLINE</a>
+                  </div>
+                  <div class="menu4">
+                    <a href="#" onclick="goTocongnghe()">CÔNG NGHỆ</a>
+                  </div>
+                  <div class="menu6">
+                    <a href="#" onclick="goTothongtin()">THÔNG TIN</a>
+                  </div>
+            </div>
+            <div class="icon-header">
+                <a href="#" onclick="goToCart()"><ion-icon name="cart-outline"></ion-icon></a>
+                <a href="javascript:void(0);" onclick="toggleLogout()"><ion-icon name="person-outline"></ion-icon></a>
+                <div id="infor-account">
+                    <p onclick="goToLogin()">Đăng xuất</p>
+                    <hr style="margin: 10px 0px;">
+                    <p onclick="goToOrder()"> Đơn hàng của bạn </p>
+                </div>
+                <span style="font-family: 'Roboto',sans-serif;" id="username"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="main1-container">
+            <img id="shirt" src="IMAGES/dongphuc3d5.jpg" alt="">
+            <div class="infor-main1-container">
+                <h3 id="name-product3d" data-product-name="Áo Đồng Phục 3D BIN">Áo Đồng Phục 3D BIN</h3>
+                <p style="line-height: 23px;">Printstyle chuyên thiết kế các mẫu áo đẹp, áo thun đồng phục, may đồng
+                    phục ngân hàng, với các mẫu mã độc quyền, giá thành cạnh tranh.</p>
+                <p style="margin-top: 5px;">Giao hàng toàn quốc.</p>
+                <hr style="margin: 15px 0px;">
+                <ul>
+                    <li>
+                        <p>S</p>
+                        <input type="number" id="quantityS" value="0" min="0" onchange="update_size_price()" />
+                    </li>
+                    <li>
+                        <p>L</p>
+                        <input type="number" id="quantityL" value="0" min="0" onchange="update_size_price()" />
+                    </li>
+                    <li>
+                        <p>M</p>
+                        <input type="number" id="quantityM" value="0" min="0" onchange="update_size_price()" />
+                    </li>
+                    <li>
+                        <p>XL</p>
+                        <input type="number" id="quantityXL" value="0" min="0" onchange="update_size_price()" />
+                    </li>
+                </ul>
+                <div class="price-buy-product">
+                    <p style="align-content: center;">Giá: <span id="price-product3d">0</span>đ</p>
+                    <p onclick="addToCart()" class="buy-product3d">Mua Hàng</p>
+                </div>
+                <hr style="margin: 15px 0px;">
+                <p>Danh mục: <span style="color: #36C4A7;">Đồng phục 3D</span></p>
+                <p style="margin-top: 20px;">Tình trạng: <span
+                        style="padding: 10px;color: white;background-color: #8BAD42;">Sẵn hàng</span></p>
+            </div>
+        </div>
+
+        <div class="main2-container">
+            <img src="IMAGES/cong-nghe-in-theu-1.jpg" alt="">
+        </div>
+    </div>
+    <div class="describe-product">
+        <p style="margin-bottom: 15px;line-height: 22px;">Printstyle chuyên thiết kế, sản xuất và may mẫu áo thun Đồng phục 3D BIN cổ trụ, chất lượng theo yêu cầu,
+            in áo nhanh (may đồng phục doanh nghiệp, áo thun du lịch,đồng phục công ty áo nhóm, áo thời trang, áo sự
+            kiện, áo teambuilding) giá thành luôn hợp lý và cạnh tranh nhất với hơn 80,000 khách hàng đã sử dụng sản
+            phẩm Printstyle với các ưu điểm như sau:</p>
+        <ul>
+            <li>– Hệ thống in thêu hiện đại, nhân viên chuyên nghiệp.</li>
+            <li>– Thiết kế nhanh miễn phí dựa trên ý tưởng, mẫu mã đa dạng chỉ trong 1 giờ làm việc.</li>
+            <li>– May đồng phục doanh nghiệp đẹp, vải thun chất lượng, đường may tỉ mỉ theo xu hướng thời trang.</li>
+            <li>– Năng lực sản xuất trên 3,000 sản phẩm mỗi ngày, luôn đáp ứng được tiến độ sản xuất.</li>
+            <li>– Giá thành cạnh tranh từ 60,000 – 140,000 VNĐ.</li>
+            <li>– Tuổi thọ in, thêu trên 2 năm.</li>
+            <li>– Giao hàng Toàn Quốc từ 1-3 ngày</li>
+        </ul>
+        <p style="margin-top: 15px;margin-bottom: 5px;">Printstyle sử dụng công nghệ in hiện đại với chất lượng tốt nhất trên thị trường, vải thun chất lượng được
+            lựa chọn tỉ mỉ, đường may thời trang tạo nên sản phẩm khác biệt về chất lượng.</p>
+        <p style="margin-bottom: 15px;font-weight: bold;">Dịch vụ thiết kế miễn phí</p>
+        <ul>
+            <li>– Sáng Tạo: đường nét thiết kế hiện đại, phối hợp màu sắc hài hòa lấy ý tưởng từ thiên nhiên, tạo nên
+                một mẫu áo đồng phục không chỉ đẹp về bên ngoài mà còn ý nghĩa về phần nội dung.</li>
+            <li>– Dịch vụ chu đáo và nhiệt tình.</li>
+            <li>– Nhân viên thiết kế chuyên nghiệp và uy tín.</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <div class="container-footer">
+            <div class="footer1">
+                <img src="IMAGES/printstyle-logo-2020.png" alt="" />
+                <ul>
+                    <li>
+                        <ion-icon name="home-outline"></ion-icon>
+                        <p>Trường Đại học Phenikaa</p>
+                    </li>
+                    <li>
+                        <ion-icon name="call-outline"></ion-icon>
+                        <p>0123456789</p>
+                    </li>
+                    <li>
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <p>@st.phenikaa-uni.edu.vn</p>
+                    </li>
+                </ul>
+                <div class="logo-footer1">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </div>
+            </div>
+            <div class="footer2">
+                <h3>GIỜ LÀM VIỆC</h3>
+                <hr class="hr-footer" />
+                <ul>
+                    <li>Từ thứ 2 đến thứ 6: 8:30 AM - 5:30 PM</li>
+                    <li>
+                        Thứ 7: <span style="font-style: italic">Làm việc đến 12 giờ</span>
+                    </li>
+                    <li>Chủ Nhật: Nghỉ</li>
+                </ul>
+                <h3>KHÁCH HÀNG TIÊU BIỂU</h3>
+                <hr class="hr-footer" />
+                <img src="IMAGES/banner-vuong-2.png" alt="" />
+            </div>
+            <div class="footer3">
+                <h3>FANPAGE</h3>
+                <hr class="hr-footer" />
+                <img src="IMAGES/fanpage12.png" alt="" />
+            </div>
+            <div class="footer4">
+                <h3>THÔNG TIN</h3>
+                <hr class="hr-footer" />
+                <p>
+                    Printstyle chuyên thiết kế và sản xuất áo thun chất lượng theo yêu
+                    cầu với giá thành luôn hợp lý và cạnh tranh nhất. Với hơn 300,000
+                    khách hàng trong và ngoài nước đã tin dùng sản phẩm Printstyle.
+                </p>
+                <h3 style="margin-top: 15px">LIÊN HỆ: 0123456789</h3>
+                <hr class="hr-footer" />
+                <ul>
+                    <li>
+                        <p>Mr.Hiệp</p>
+                        <p>21012057</p>
+                    </li>
+                    <li>
+                        <p>Mr.Hoàng</p>
+                        <p>21012060</p>
+                    </li>
+                    <li>
+                        <p>Mr.Hưng</p>
+                        <p>21011608</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs@1.10.11/dist/interact.min.js"></script>
+    <script src="JS/next-page.js"></script>
+    <script src="JS/logout.js"></script>
+    <script src="JS/product3d.js"></script>
+</body>
+
+</html>
